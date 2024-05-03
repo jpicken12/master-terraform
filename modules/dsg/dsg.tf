@@ -1,6 +1,6 @@
 # Default Security Group
 resource "aws_default_security_group" "default_sec_group" {
-  vpc_id = module.myvpc.main_vpc_id
+  vpc_id = var.main_vpc_id
 
   dynamic "ingress" {
     for_each = var.dsg_parameters
