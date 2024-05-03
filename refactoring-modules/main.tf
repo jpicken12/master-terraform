@@ -24,7 +24,7 @@ module "vpc" {
   source = "github.com/jpicken12/master-terraform//modules/vpc"
 }
 
-module "my_dsg" {
+module "dsg" {
   source         = "github.com/jpicken12/master-terraform//modules/dsg"
   main_vpc_id    = module.vpc.main_vpc_id
   dsg_parameters = var.dsg_parameters
