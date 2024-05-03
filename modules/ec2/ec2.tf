@@ -23,7 +23,7 @@ data "aws_ami" "latest_amazon_linux2"{
 }
 
 resource "aws_instance" "server" {
-    ami = data.aws_ami.latest_amazon_linux2
+    ami = data.aws_ami.latest_amazon_linux2.id
     instance_type = var.server_type
     subnet_id = var.web_subnet
     vpc_security_group_ids = [var.dsg_sec_group_id]
