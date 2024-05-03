@@ -19,5 +19,5 @@ variable "vpc_cidr_block" {
 variable "web_subnet" {
   type = string
   description = "CIDR range for web subnet"
-  default = "10.0.10.0/16"
+  default = "10.0.10.0/24"
 }
