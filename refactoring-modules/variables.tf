@@ -12,7 +12,7 @@ variable "AWS_SECRET_ACCESS_KEY" {
 }
 
 variable "dsg_parameters" {
-  type = map()
+  description = "Input variable for default security group rules"
 }
 
 variable "TFE_GITHUB_TOKEN" {
