@@ -1,5 +1,5 @@
 variable "aws_region" {
-  type = string
+  type    = string
   default = "us-west-1"
 }
 
@@ -11,12 +11,6 @@ variable "AWS_SECRET_ACCESS_KEY" {
   type = string
 }
 
-variable "tcp_org" {
-  type    = string
-  default = "jpicken-org"
-}
-
-variable "tcp_workspace" {
-    type = string
-    default = "master-terraform"
+variable "TFE_GITHUB_TOKEN" {
+  type = string
 }
