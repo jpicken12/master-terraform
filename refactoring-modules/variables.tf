@@ -11,6 +11,10 @@ variable "AWS_SECRET_ACCESS_KEY" {
   type = string
 }
 
+variable "dsg_parameters" {
+  type = map()
+}
+
 variable "TFE_GITHUB_TOKEN" {
   type = string
 }
