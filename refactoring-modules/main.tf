@@ -24,25 +24,31 @@ provider "aws" {
 # rebuild them in the tf configutation file. So... what's the point.
 variable "dsg_parameters" {
   type = list(object({
-    http = {
-        from_port = 80
-        to_port = 80
-        protocol = "tcp"
-        cidr_blocks = "0.0.0.0/0"
+    to_port     = number
+    from_port   = number
+    protocol    = string
+    cidr_blocks = list(string)
+  }))
+  default = [
+    {
+      from_port   = 80
+      to_port     = 80
+      protocol    = "tcp"
+      cidr_blocks = "0.0.0.0/0"
     },
-    http_8080 = {
-        from_port = 8080
-        to_port = 8080
-        protocol = "tcp"
-        cidr_blocks = "0.0.0.0/0"
+    {
+      from_port   = 8080
+      to_port     = 8080
+      protocol    = "tcp"
+      cidr_blocks = "0.0.0.0/0"
     },
-    ssh = {
-        from_port = 22
-        to_port = 22
-        protocol = "tcp"
-        cidr_blocks = "0.0.0.0/0"
+    {
+      from_port   = 22
+      to_port     = 22
+      protocol    = "tcp"
+      cidr_blocks = "0.0.0.0/0"
     }
-  }))  
+  ]
 }
 
 module "vpc" {
@@ -50,7 +56,7 @@ module "vpc" {
 }
 
 module "my_dsg" {
-  source = "github.com/jpicken12/master-terraform//modules/dsg"
-  main_vpc_id = module.vpc.main_vpc_id
+  source         = "github.com/jpicken12/master-terraform//modules/dsg"
+  main_vpc_id    = module.vpc.main_vpc_id
   dsg_parameters = var.dsg_parameters
 }
