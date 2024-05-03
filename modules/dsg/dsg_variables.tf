@@ -1,28 +1,13 @@
 variable "dsg_parameters" {
   description = "Parameters to use for ingress and egress rules i.e. from_port to_port etc"
-  type = map(any)
-
-  default = [
-    {
-        from_port = 80
-        to_port = 80
-        protocol = "tcp"
-        cidr_blocks = "0.0.0.0/0"
-    },
-    {
-        from_port = 8080
-        to_port = 8080
-        protocol = "tcp"
-        cidr_blocks = "0.0.0.0/0"
-    },
-    {
-        from_port = 22
-        to_port = 22
-        protocol = "tcp"
-        cidr_blocks = "0.0.0.0/0"
-    }
-  ]
+  type = list(object({
+    to_port     = number
+    from_port   = number
+    protocol    = string
+    cidr_blocks = list(string)
+  }))
 }
+
 variable "main_vpc_id" {
   
 }
