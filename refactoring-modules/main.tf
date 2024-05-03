@@ -33,7 +33,7 @@ module "my_dsg" {
 module "ec2" {
   source = "github.com/jpicken12/master-terraform//modules/ec2"
   web_subnet = module.vpc.web_subnet
-  dsg_sec_group_id = module.dsg_sec_group_id
+  dsg_sec_group_id = module.dsg.dsg_sec_group_id
   public_key = var.public_key
   server_type = var.server_type
 }
