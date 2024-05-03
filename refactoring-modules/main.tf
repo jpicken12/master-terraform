@@ -20,7 +20,7 @@ provider "aws" {
   secret_key = var.AWS_SECRET_ACCESS_KEY
 }
 
-module "my_vpc" {
+module "vpc" {
   source = "github.com/jpicken12/master-terraform//modules/vpc"
 }
 
