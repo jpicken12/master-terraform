@@ -13,8 +13,7 @@ variable "AWS_SECRET_ACCESS_KEY" {
 
 variable "dsg_parameters" {
   description = "Input variable for default security group rules"
-  type = list()
-  default = [
+  type = list(object(
     {
         from_port = 80
         to_port = 80
@@ -33,7 +32,7 @@ variable "dsg_parameters" {
         protocol = "tcp"
         cidr_blocks = "0.0.0.0/0"
     }
-  ]
+  ))
 }
 
 variable "TFE_GITHUB_TOKEN" {
