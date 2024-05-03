@@ -13,7 +13,7 @@ variable "AWS_SECRET_ACCESS_KEY" {
 
 variable "dsg_parameters" {
   description = "Input variable for default security group rules"
-  type = map(string)
+  type = map(any)
   default = [
     {
         from_port = 80
