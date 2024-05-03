@@ -6,10 +6,6 @@ variable "public_key" {
   
 }
 
-variable "script_name" {
-  
-}
-
 variable "server_type" {
   
 }
