@@ -1,0 +1,368 @@
+{
+    "scaleModels": [
+        {
+            "model type": "Aircraft",
+            "manufacturer": "Airfix",
+            "make": "Messerschmitt",
+            "variant": "BF109E-3/E-4",
+            "paints": [
+                {
+                    "name": "Silver",
+                    "finish": "Metallic",
+                    "make": "Humbrol",
+                    "number": "11",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "x11",
+                            "owned": true
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "997",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Black",
+                    "finish": "Gloss",
+                    "make": "Humbrol",
+                    "number": "21",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "x1",
+                            "owned": false
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "861",
+                            "owned": true
+                        }
+                    ]
+                },
+                {
+                    "name": "Khaki",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "26",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf48",
+                            "owned": false
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "879",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Sea Gree",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "27",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf54",
+                            "owned": false
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "992",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Slate Grey",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "31",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf25",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Black",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "33",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf1",
+                            "owned": false
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "950",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Gunmetal",
+                    "finish": "Metallic",
+                    "make": "Humbrol",
+                    "number": "53",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "x10",
+                            "owned": false
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "863",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Scarlet",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "60",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf7",
+                            "owned": false
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "817",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Aircraft Blue",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "65",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf21",
+                            "owned": false
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "971",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Oak",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "71",
+                    "owned": false,
+                    "equivalents": [
+                       {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "847",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Schwartzgrun",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "241",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf27",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Dunkelgrun",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "241",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf58",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Grau",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "241",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf22",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "White",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "34",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf2",
+                            "owned": false
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "951",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Flesh",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "61",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf15",
+                            "owned": false
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "927",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Dark Grey",
+                    "finish": "Metallic",
+                    "make": "Humbrol",
+                    "number": "32",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf24",
+                            "owned": false
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "866",
+                            "owned": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Chocolate",
+                    "finish": "Matt",
+                    "make": "Humbrol",
+                    "number": "98",
+                    "owned": false,
+                    "equivalents": [
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Tamiya",
+                            "number": "xf10",
+                            "owned": false
+                        },
+                        {
+                            "name": "",
+                            "finish": "",
+                            "make": "Vallejo",
+                            "number": "872",
+                            "owned": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
