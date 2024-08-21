@@ -38,18 +38,18 @@ resource "aws_instance" "server" {
     vpc_security_group_ids = [var.dsg_sec_group_id]
     associate_public_ip_address = true
     key_name = "testing_ssh_key"
-    user_data = <<-EOF
-        #!/bin/bash
-        sudo yum -y update && sudo yum -y install httpd
-        sudo systemctl start httpd && sudo systemctl enable httpd 
-        sudo echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
+    #user_data = <<-EOF
+    #    #!/bin/bash
+    #    sudo yum -y update && sudo yum -y install httpd
+    #    sudo systemctl start httpd && sudo systemctl enable httpd 
+    #    sudo echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
 
-        sudo yum -y install docker
-        sudo systemctl start docker
-        sudo usermod -aG docker ec2-user
-        sudo docker container run -d -p 8080:80 nginx
-    EOF
-    t#ags = {
+    #    sudo yum -y install docker
+    #    sudo systemctl start docker
+    #    sudo usermod -aG docker ec2-user
+    #    sudo docker container run -d -p 8080:80 nginx
+    #EOF
+    #tags = {
     #    "Name" = "My EC2 Intance - Amazon Linux 2"
     #}
 }
