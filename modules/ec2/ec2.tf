@@ -22,8 +22,17 @@ data "aws_ami" "latest_amazon_linux2"{
   }
 }
 
+data "aws_ami" "latest_amazon_macos" {
+  owners = ["amazon"]
+  most_recent = true
+  filter{
+    name = "name"
+    values = ["amzn-ec2-macos-12.7.6-20240814-231426"]
+  }
+}
+
 resource "aws_instance" "server" {
-    ami = data.aws_ami.latest_amazon_linux2.id
+    ami = data.aws_ami.latest_amazon_macos.id
     instance_type = var.server_type
     subnet_id = var.web_subnet
     vpc_security_group_ids = [var.dsg_sec_group_id]
@@ -40,9 +49,9 @@ resource "aws_instance" "server" {
         sudo usermod -aG docker ec2-user
         sudo docker container run -d -p 8080:80 nginx
     EOF
-    tags = {
-        "Name" = "My EC2 Intance - Amazon Linux 2"
-    }
+    t#ags = {
+    #    "Name" = "My EC2 Intance - Amazon Linux 2"
+    #}
 }
 
 # Creating a key-pair resource 
