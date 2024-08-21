@@ -28,8 +28,8 @@ variable "dsg_parameters" {
       cidr_blocks = ["0.0.0.0/0"]
     },
     {
-      from_port   = 8080
-      to_port     = 8080
+      from_port   = 5900
+      to_port     = 5900
       protocol    = "tcp"
       cidr_blocks = ["0.0.0.0/0"]
     },
@@ -47,7 +47,7 @@ variable "public_key" {
 }
 
 variable "server_type" {
-  default = "t2.micro"
+  default = "m1.metal"
 }
 
 variable "TFE_GITHUB_TOKEN" {
